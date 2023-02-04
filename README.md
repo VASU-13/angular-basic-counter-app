@@ -1,6 +1,22 @@
-# CounterApp
-
+# Counter App
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.8.
+
+
+
+## Component Structure 
+
+```mermaid
+	flowchart
+	subgraph parent
+	counter
+	end
+	counter--child-1-->counter-output
+	counter--child-2-->counter-buttons
+```
+
+> ### **Parent to Child-1 Communication using Input decorator**
+
+> ### **Child-2 to Parent Communication using Output decorator  Event Emitter**
 
 ## Development server
 

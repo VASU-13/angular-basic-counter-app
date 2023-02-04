@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'counter-app';
+
+  counterValue = 0;
+
+  receiveCounter($event: number) {
+    this.counterValue= $event;
+  }
+
 }
